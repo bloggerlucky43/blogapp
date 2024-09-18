@@ -1,0 +1,21 @@
+<%- include('header.ejs') %>
+<div class="container">
+<h1>Create Post</h1>
+<form action="submit" method="POST">
+    <div class="form-group">
+    <label for="Pname"> Name: </label>
+    <input type="text" placeholder="Name" name="Pname" required>
+    </div>
+    <div class="form-group">
+    <label for="Tname">Title:</label>
+    <input type="text" placeholder="Title" name="Tname" required>
+    </div>
+    <div class="form-group">
+    <label for="Dname">Description:</label>
+    <textarea class="form-control" name="Dname" placeholder="Description" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<%- include('footer.ejs') %>

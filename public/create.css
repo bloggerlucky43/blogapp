@@ -1,0 +1,109 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Font for overall consistency */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Light background for the page */
+}
+
+.container {
+    max-width: 800px;
+    /* Limits width to ensure readability */
+    margin: 20px auto;
+    /* Centers container and adds margin */
+    padding: 20px;
+    /* Adds padding inside the container */
+    background-color: #ffffff;
+    /* White background for the form */
+    border-radius: 8px;
+    /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 24px;
+    /* Size for the main heading */
+    color: #333333;
+    /* Dark grey color for text */
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Space between form elements */
+}
+
+label {
+    display: block;
+    /* Makes label a block element */
+    margin-bottom: 5px;
+    /* Space between label and input */
+    font-weight: bold;
+    /* Bold labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    /* Full width of the parent container */
+    padding: 10px;
+    /* Padding inside the input fields */
+    border: 1px solid #dddddd;
+    /* Light border */
+    border-radius: 4px;
+    /* Rounded corners for inputs */
+    box-sizing: border-box;
+    /* Ensures padding is included in width */
+}
+
+textarea {
+    resize: vertical;
+    /* Allows vertical resizing only */
+    min-height: 100px;
+    /* Minimum height for textarea */
+}
+
+button[type="submit"] {
+    background-color: #FF4500;
+    /* Bright orange button */
+    color: #ffffff;
+    /* White text on the button */
+    border: none;
+    /* Removes default border */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #FF7F50;
+    /* Slightly lighter orange on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        /* Reduce padding on smaller screens */
+        margin: 10px;
+        /* Reduce margin on smaller screens */
+    }
+
+    h1 {
+        font-size: 20px;
+        /* Smaller heading size on smaller screens */
+    }
+}

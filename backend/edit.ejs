@@ -1,0 +1,20 @@
+<%- include('header.ejs') %>
+    <div class="container">
+        <h1>Edit Post</h1>
+        <form action="/edit/<%= id %>" method="POST">
+            <div class="form-group">
+                <label for="Pname">Name:</label>
+                <input type="text" id="Pname" name="name" class="form-control" value="<%= name %>" required>
+            </div>
+            <div class="form-group">
+                <label for="Tname">Title:</label>
+                <input type="text" id="Tname" name="title" class="form-control" value="<%= title %>" required>
+            </div>
+            <div class="form-group">
+                <label for="Dname">Description:</label>
+                <textarea id="Dname" name="desc" class="form-control" rows="4" required><%= desc %></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+    <%- include('footer.ejs') %>

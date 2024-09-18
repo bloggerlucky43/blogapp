@@ -1,0 +1,199 @@
+body{
+    background: linear-gradient(135deg, #FF7F50, #4F4F4F,
+        #D3D3D3,
+        #FF4500);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* .container-fluid {
+    background: linear-gradient(90deg, #333333, #4F4F4F);
+    color: white;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+
+/* Responsive styles for medium devices */
+/* @media (max-width: 992px) {
+    .container-fluid {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+        /* flex-direction: column;
+        /* Stack items vertically */
+        /* text-align: center; */ */
+        /* Center text alignment */
+    /* }
+} */ */
+
+/* Responsive styles for small devices */
+/* @media (max-width: 768px) {
+    .container-fluid {
+        padding: 8px; */
+        /* Further reduce padding */
+    /* }
+}
+
+/* Responsive styles for extra small devices */
+/* @media (max-width: 576px) {
+    .container-fluid {
+        padding: 6px; */
+        /* Further reduce padding */
+        /* flex-direction: column; */
+        /* Stack items vertically */
+        /* align-items: center; */
+        /* Center items horizontally */
+    /* }
+} */ 
+ /* Ensure the header sticks to the top and has a proper background */
+ header {
+     background-color: hsl(0, 0%, 100%);
+     /* or any other background color */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 0 15px;
+     /* Ensure some padding on the left and right */
+ }
+
+ /* Make sure the logo and buttons align correctly */
+ /* .d-flex {
+     display: flex;
+ } */
+
+ /* Adjust the spacing of buttons */
+ .btn {
+     margin-right: 10px;
+     /* Adjust the margin as needed */
+ }
+
+ /* Responsive behavior */
+ @media (max-width: 767px) {
+     header {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     #btn{
+        margin-top: 0;
+     }
+     .col-md-3 {
+         width: 100%;
+         justify-content: space-between;
+        
+         /* Space between logo and buttons on small screens */
+     }
+
+     .d-flex>a {
+         margin-right: 0;
+         margin-top: 0;
+         color: red;
+         /* Remove margin on small screens */
+     }
+ }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-fluid header div a svg{
+    display: block;
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+}
+.container-fluid header div a svg:hover{
+    transform: scale(1.1);
+}
+.container-border {
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.container-border:hover {
+    transform: translateY(-5px);
+    /* Lift the card slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+}
+.container-border h2 {
+    color: #333333;
+    /* Dark grey for headings */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container-border p {
+    color: #666666;
+    /* Medium grey for body text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+.container-border+.container-border {
+    margin-top: 20px;
+    /* Space between containers */
+}
+h1,h2{
+    font-size:xx-large;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+/* #author{
+    color: #D35400;
+    font-size: small;
+    text-align: right;
+    margin-right: 4px;
+    
+}
+
+footer{
+    justify-self: center;
+    align-self: baseline;
+} */
+.btn-primary{
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: #FF4500;
+}
+.btn-secondary{
+    background-color: #D3D3D3;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    background-color: #A9A9A9 ;
+}

@@ -1,0 +1,34 @@
+<%- include('header.ejs') %>
+    <div class="container">
+        <% if (titleArray.length> 0 && descArray.length > 0) { %>
+            <% for (let i=0; i < titleArray.length; i++) { %>
+                <h1>Posts</h1>
+                <hr>
+                <div class="container-border">
+                    <h2>
+                        <%= titleArray[i] %>
+                    </h2>
+                    <p>
+                        <%= descArray[i] %>
+                    </p>
+                    <p id="author"> ~<%= nameArray[i] %>
+                    </p>
+                    <a href="/edit/<%= i %>">
+                        <button class="btn btn-primary">Edit</button>
+                    </a>
+                    <a href="/delete/<%= i %>">
+                        <button class="btn btn-secondary">Delete</button>
+                    </a>
+                </div>
+                <% } %>
+                    <% } else { %>
+                        <h1>Unleash Creativity, One Post at a Time!</h1>
+                        <p>Create posts and read. Your hub for literary adventures! Unleash your imagination, craft
+                            stories and dive into a universe of endless tales. Join us in sharing and discovering
+                            captivating narratives today!</p>
+                        <a href="/submit-button">
+                            <button class="btn btn-primary">Create Posts</button>
+                        </a>
+                        <% } %>
+    </div>
+    <%- include('footer.ejs') %>
